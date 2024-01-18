@@ -2,6 +2,8 @@ import React from "react";
 import "./top_picks.css";
 import Filter from "../common/filters/Filter";
 import TPCollections from "./TPCollections/TPCollections";
+import TopBrands from "./TopBrands";
+import ExploreSection from "../common/exploreSection/ExploreSection";
 
 const topPicks = [
   {
@@ -24,6 +26,8 @@ function TopPicks(props) {
         <Filter filters={topPicks} />
       </div>
       <TPCollections />
+      <TopBrands />
+      <ExploreSection />
     </div>
   );
 }
