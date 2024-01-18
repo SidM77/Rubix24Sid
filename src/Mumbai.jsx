@@ -7,6 +7,7 @@ import Food from "./components/Food/Food";
 import Memorabilia from "./components/Memorabilia/Memorabilia";
 import MovingText from "./components/MovingText/MovingText";
 import Navbar from "./components/Navbar";
+import SearchBg from "./components/SearchBg";
 
 function Mumbai(props) {
   const [activeSection, setActiveSection] = useState("Top-Picks!");

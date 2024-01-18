@@ -9,7 +9,7 @@
 
 
 
-/*.rest_bg{*/
+/* .rest_bg{*/
 /*    height: 100vh;*/
 /*    background: linear-gradient(*/
 /*            to bottom,*/
@@ -19,7 +19,12 @@
 /*      rgba(168, 94, 158, 0) 100% *!*/
 /*    )*/
 /*    !*url('./images/sssynchroDev.png');*!*/
-/*}*/
+/*} */
+
+.rest_bg{
+    display: block;
+    height: 100vh;   
+}
 
 .absolute-center{
     display: flex;
