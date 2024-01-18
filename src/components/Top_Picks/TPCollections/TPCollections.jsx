@@ -5,6 +5,7 @@ import NextArrow from "../../common/Carousel/nextArrow";
 import PrevArrow from "../../common/Carousel/prevArrow";
 import TPItem from "./TPItem/TPItem";
 import { useNavigate } from "react-router-dom";
+import MovingText from "../../MovingText/MovingText";
 
 const tpItems = [
   {
@@ -72,6 +73,7 @@ function TpCollections(props) {
   return (
     <div className={"tp-collection"}>
       <div className={"max-width"}>
+        <MovingText />
         <div className={"collection-title"}>The Absolute Essentials</div>
         <Slider {...settings}>
           {tpItems.map((item) => {

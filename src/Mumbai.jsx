@@ -18,7 +18,7 @@ function Mumbai(props) {
         <Navbar />
       </div>
       <div className="rest_bg">
-        <MovingText />
+        {/*<MovingText />*/}
 
         <TabOptions
           activeSection={activeSection}

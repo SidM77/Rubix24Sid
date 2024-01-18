@@ -5,25 +5,25 @@ const Elephanta = () => {
   const list = [
     {
       name: "Thomas Fisher- Explore Elephanta Caves Tour",
-      price: "Rs. 500",
+      price: 500,
       upvotes: 923,
       reviewWithHighestUpvote: "An amazing historical journey!",
     },
     {
       name: "Adventure Tours- Elephanta Island Ferry",
-      price: "Rs. 150",
+      price: 150,
       upvotes: 650,
       reviewWithHighestUpvote: "Breathtaking views of the Arabian Sea!",
     },
     {
       name: "Elephanta Caves Light and Sound Show",
-      price: "Rs. 200",
+      price: 200,
       upvotes: 354,
       reviewWithHighestUpvote: "A mesmerizing audio-visual experience!",
     },
     {
       name: "TourIndia Inc.- Guided Tour of Elephanta Sculptures",
-      price: "Rs. 300",
+      price: 300,
       upvotes: 180,
       reviewWithHighestUpvote:
         "In-depth insights into ancient art and culture.",

@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   let links = [
     { name: "Home", link: "/" },
-    { name: "Service", link: "/" },
-    { name: "About", link: "/" },
+    // { name: "Service", link: "/" },
+    // { name: "About", link: "/" },
     { name: "FAQs", link: "/" },
     { name: "Contact", link: "/" },
   ];
@@ -51,10 +51,11 @@ const Navbar = () => {
             onClick={() => navigate("/signup")}
             className="bg-pink-600 text-amber-400 font-bold border-2 border-amber-400 py-2 px-4 rounded md:ml-8 hover:bg-amber-400 hover:text-pink-600 duration-500 flex items-center uppercase"
           >
-            Login with{" "}
+            Login{""}
             <span className="text-2xl ml-2">
-              {" "}
-              <ion-icon name="logo-github"></ion-icon>{" "}
+              {""}
+              <ion-icon name="logo-github"></ion-icon>
+              {""}
             </span>
           </button>
         </ul>
