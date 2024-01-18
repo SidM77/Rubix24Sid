@@ -9,7 +9,7 @@ const ExploreCard = ({ restaurant }) => {
   const cuisines = restaurant?.info?.cuisine
     ?.map((item) => item.name)
     .slice(0, 3);
-  const bottomContainer = restaurant?.bottomContainers;
+  const bottomContainers = restaurant?.bottomContainers;
   return (
     <div className={"explore-card cur-po"}>
       <div className={"explore-card-cover"}>
@@ -22,7 +22,7 @@ const ExploreCard = ({ restaurant }) => {
             {rating}
             <img
               className="rating-star absolute-center"
-              src={"https://cdn-icons-png.flaticon.com/512/149/149220.png"}
+              src={"https://cdn-icons-png.flaticon.com/256/148/148841.png"}
             />
           </div>
         )}
@@ -38,10 +38,24 @@ const ExploreCard = ({ restaurant }) => {
                 </span>
               );
             })}
-            {approxPrice && <div className="approx-price">{approxPrice}</div>}
           </div>
         )}
+        {approxPrice && <div className="res-price">{approxPrice}</div>}
       </div>
+      {bottomContainers.length > 0 && (
+        <div>
+          <div className="card-separator"></div>
+          <div className="explore-bottom">
+            {/*<img*/}
+            {/*  src={bottomContainers[0]?.image[0]?.url}*/}
+            {/*  style={{ height: "18px" }}*/}
+            {/*  alt={bottomContainers[0].text}*/}
+            {/*  className="explore-bottom-image"*/}
+            {/*/>*/}
+            <div className={"res-bottom-text"}>{bottomContainers[0]?.text}</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
