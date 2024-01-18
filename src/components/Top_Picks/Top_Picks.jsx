@@ -23,9 +23,7 @@ const topPicks = [
 function TopPicks(props) {
   return (
     <div>
-      <div className={"max-width"}>
-        <Filter filters={topPicks} />
-      </div>
+      <div className={"max-width"}>{/*<Filter filters={topPicks} />*/}</div>
       <TPCollections />
       <TopBrands />
       <ExploreSection list={restaurantList} collectionName="Grab A Bite!" />

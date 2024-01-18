@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import NextArrow from "../../common/Carousel/nextArrow";
 import PrevArrow from "../../common/Carousel/prevArrow";
 import TPItem from "./TPItem/TPItem";
+import { useNavigate } from "react-router-dom";
 
 const tpItems = [
   {
@@ -11,6 +12,7 @@ const tpItems = [
     title: "Vada Pav",
     cover:
       "https://static.toiimg.com/thumb/80920657.cms?imgsize=251331&width=800&height=800",
+    url: "compare",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ const tpItems = [
     title: "Elephanta Caves Tour",
     cover:
       "https://www.tripsavvy.com/thmb/fdxJA_nFNkK77yxMVUudyMPSqIY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Mumbai2019-1-34-b97e159b015d4c989fa265b4b3ac7463.JPG",
+    url: "elephanta",
   },
   {
     id: 4,
@@ -65,6 +68,7 @@ const settings = {
 };
 
 function TpCollections(props) {
+  let navigate = useNavigate();
   return (
     <div className={"tp-collection"}>
       <div className={"max-width"}>
