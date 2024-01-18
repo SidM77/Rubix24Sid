@@ -11,6 +11,16 @@
     padding: 12px 12px 0px 12px;
 }
 
+.btn-discover{
+    margin-top: 15px;
+    margin-left: 200px;
+    font-weight: bold;
+    color: #dac016;
+    background-color: #db2777;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
 .tab-name{
     font-size:20px;
     font-weight: 500;

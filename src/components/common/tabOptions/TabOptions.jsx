@@ -12,14 +12,14 @@ const tabs = [
     backdrop: "FCEE0E",
   },
   {
-    id: 1,
+    id: 2,
     name: "Memorabilia",
     inactive_img: "https://cdn-icons-png.flaticon.com/512/2849/2849657.png",
     active_img: "https://cdn-icons-png.flaticon.com/512/2849/2849751.png",
     backdrop: "FCEE0E",
   },
   {
-    id: 1,
+    id: 3,
     name: "Food",
     inactive_img:
       "https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp",
@@ -27,6 +27,13 @@ const tabs = [
       "https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png",
     backdrop: "FCEE0E",
   },
+  // {
+  //   id: 4,
+  //   name: "Discover",
+  //   inactive_img: "https://cdn-icons-png.flaticon.com/512/1794/1794580.png",
+  //   active_img: "https://cdn-icons-png.flaticon.com/512/1794/1794580.png",
+  //   backdrop: "FCEE0E",
+  // },
 ];
 
 function TabOptions({ activeSection, setActiveSection }) {
@@ -64,6 +71,13 @@ function TabOptions({ activeSection, setActiveSection }) {
             </div>
           );
         })}
+        <button className="btn btn-discover btn-primary absolute-center">
+          <img
+            className="tab-image"
+            src="https://cdn-icons-png.flaticon.com/512/1794/1794580.png"
+          />
+          Discover
+        </button>
       </div>
     </div>
   );

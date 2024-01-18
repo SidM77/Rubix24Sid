@@ -4,7 +4,8 @@ import Filter from "../common/filters/Filter";
 import TPCollections from "./TPCollections/TPCollections";
 import TopBrands from "./TopBrands";
 import ExploreSection from "../common/exploreSection/ExploreSection";
-
+import { restaurants } from "../../data/restaurants";
+const restaurantList = restaurants;
 const topPicks = [
   {
     id: 1,
@@ -27,7 +28,7 @@ function TopPicks(props) {
       </div>
       <TPCollections />
       <TopBrands />
-      <ExploreSection />
+      <ExploreSection list={restaurantList} collectionName="Grab A Bite!" />
     </div>
   );
 }
