@@ -93,7 +93,7 @@ const ComparePg = () => {
             
           </div>
           <div className="w-1/3 text-right">
-            <p className="text-xl font-bold italic border-l-4 border-blue-500 pl-4">
+            <p className="text-xl font-medium italic border-l-4 border-blue-500 pl-4">
               "{item.reviewWithHighestUpvote}"
             </p>
           </div>
